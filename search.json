@@ -1,16 +1,23 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "",
     "section": "",
-    "text": "About this site"
+    "text": "Kindly contacs as below"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Quarto",
+    "title": "",
     "section": "",
     "text": "This is a Quarto website."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "",
+    "section": "",
+    "text": "About this site"
   }
 ]
