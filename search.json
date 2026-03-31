@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "",
@@ -12,19 +19,5 @@
     "title": "",
     "section": "",
     "text": "This is a Quarto website."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "WORKS/대한민국행정구역.html",
-    "href": "WORKS/대한민국행정구역.html",
-    "title": "",
-    "section": "",
-    "text": "Administrative District\n\n\nCity County District\n입력 파일: /KOSIS/RH_시군구별.csv, /KOSIS/RH_by_CCD.csv 출력 파일: FILES/시군구.csv (한글 인코딩: UTF-8)"
   }
 ]

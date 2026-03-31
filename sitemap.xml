@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>git@icloud:ccsdesk/ccsdesk.github.io.git/about.html</loc>
+    <lastmod>2026-03-31T19:56:40.074Z</lastmod>
+  </url>
+  <url>
     <loc>git@icloud:ccsdesk/ccsdesk.github.io.git/contact.html</loc>
-    <lastmod>2026-03-31T19:48:50.953Z</lastmod>
+    <lastmod>2026-03-31T19:56:40.290Z</lastmod>
   </url>
   <url>
     <loc>git@icloud:ccsdesk/ccsdesk.github.io.git/index.html</loc>
-    <lastmod>2026-03-31T19:48:51.170Z</lastmod>
-  </url>
-  <url>
-    <loc>git@icloud:ccsdesk/ccsdesk.github.io.git/about.html</loc>
-    <lastmod>2026-03-31T19:48:51.371Z</lastmod>
-  </url>
-  <url>
-    <loc>git@icloud:ccsdesk/ccsdesk.github.io.git/WORKS/대한민국행정구역.html</loc>
-    <lastmod>2026-03-31T19:48:52.633Z</lastmod>
+    <lastmod>2026-03-31T19:56:40.492Z</lastmod>
   </url>
 </urlset>
