@@ -1,23 +1,86 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "",
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data Download",
     "section": "",
-    "text": "About this site"
+    "text": "입수한 원자료를 분석에 사용하기 위해 가공한 데이터를 공개합니다. 공개하는 데이터를 사용한 분석에 대한 요약을 함께 제공하는 것을 기본 원칙으로 합니다."
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "",
+    "objectID": "data/AdminDist.html",
+    "href": "data/AdminDist.html",
+    "title": "Administritive District",
     "section": "",
-    "text": "Kindly contacs as below"
+    "text": "Administrative District\n\n\nCity County District\n\n대한민국 시군구 코드 및 이름(국문, 영문)\n출처: KOSIS\n다운로드: 시군구.csv"
+  },
+  {
+    "objectID": "home/가계동향조사_2025년3분기.html",
+    "href": "home/가계동향조사_2025년3분기.html",
+    "title": "2025년 3분기 가계동향 조사",
+    "section": "",
+    "text": "조사 결과\n\n가구당 월평균 소득\n•   가구당 월평균 소득은 543만 9천원으로 전년동분기대비 3.5% 증가 (실질소득 1.5% 증가)\n•   근로소득(1.1%), 사업소득(0.2%), 이전소득(17.7%) 증가\n\n\n가계 지출\n•   가계지출은 400만 2천원으로 전년동분기대비 0.7% 증가 (실질소비지출 0.7% 감소)\n•   소비지출(1.3%) 증가, 비소비지출(-0.9%) 감소\n\n\n처분가능소득\n•   처분가능소득은 438만 1천원으로 전년동분기대비 4.6% 증가, 흑자액은 143만 7천원으로 12.2% 증가\n•   평균소비성향은 67.2%로 전년동분기대비 2.2%p 하락"
+  },
+  {
+    "objectID": "home/건설산업기본법일부개정_2025년10월12일.html",
+    "href": "home/건설산업기본법일부개정_2025년10월12일.html",
+    "title": "건설산업 기본법 개정",
+    "section": "",
+    "text": "주요 내용\n\n법 일부개정(2025. 05. 26.) 시행(2025. 11. 27.)\n\n공제조합의 사업에 조합원과 도급계약을 체결한 발주자에 대한 보증 추가\n공제조합이 발주자의 재산상태를 평가하고 사업 이행능력을 조사한 후 보증할 수 있도록 함\n의료기관, 약국 등이 실손의료공제계약의 공제금 청구에 필요한 서류를 공제조합에 전자적 형태로 전송할 수 있도록 함\n\n\n\n시행령 일부개정(2025. 11. 25.) 시행(2025. 11. 27.)\n\n공제조합이 조합원과 도급계약을 체결한 발주자를 대상으로 부동산개발사업 관련 채무에 대한 보증을 할 수 있도록 보증 내용을 정함\n실손의료공제 계약자 등이 요양기관에 공제금 청구 서류의 전송을 요청하는 경우 피공제자의 진료내역을 확인하도록 함\n요양기관이 해당 서류를 공제조합에 전송할 때에는 암호화 등의 조치를 하도록 함"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "",
+    "title": "Home",
     "section": "",
-    "text": "This is a Quarto website."
+    "text": "건설산업, 도시, 부동산 분야에서 근무 경력이 있는 인원들로 구성되어 있습니다.\n관련 분야의 연구 결과는 뉴스레터, 보고서, 책자 등으로 발간하고 있습니다.\n\n회사 전략 컨설팅, 시장 조사, 기획 연구 의뢰나 참여 문의는 Contacts를 참고 하세요.\n\n\n\n\n\n뉴스레터 구독(무료) 신청:\n\n\n대표 에디터에게 문의:"
+  },
+  {
+    "objectID": "prjs.html",
+    "href": "prjs.html",
+    "title": "Projects",
+    "section": "",
+    "text": "건설도시연구의 완료한 프로젝트 중에서 선별된 프로젝트 요약을 보실 수 있습니다.\n공개된 자료는 바로 다운로드할 수 있는 링크가 제공됩니다."
+  },
+  {
+    "objectID": "prjs/개포프로젝트.html",
+    "href": "prjs/개포프로젝트.html",
+    "title": "개포 프로젝트",
+    "section": "",
+    "text": "인접 구 시장조사 및 프로첵트 사업성 분석.\n\n개요\n\n수행 기간: 2026년 07월 ~ 2026년 09월\n업무 범위:\n\n\n\n업무 세부 내용\n\n\n결과 보고서\n비공개"
+  },
+  {
+    "objectID": "pubs.html",
+    "href": "pubs.html",
+    "title": "Publications",
+    "section": "",
+    "text": "건설도시연구의 출판물 요약본을 보실 수 있습니다.\n공개된 자료는 바로 다운로드할 수 있는 링크가 제공됩니다."
+  },
+  {
+    "objectID": "whois.html",
+    "href": "whois.html",
+    "title": "Contacts",
+    "section": "",
+    "text": "건설도시연구와 함께하는 사람들을 소개합니다."
+  },
+  {
+    "objectID": "whois/editor.html",
+    "href": "whois/editor.html",
+    "title": "건도연",
+    "section": "",
+    "text": "편집자.\ne-mail: ccsdeskpic@gmail.com"
+  },
+  {
+    "objectID": "whois/nopicture.html",
+    "href": "whois/nopicture.html",
+    "title": "사진 없음",
+    "section": "",
+    "text": "시진이 없어 기본 사진을 사용한 경우\ne-mail: ccsdeskpic@gmail.com"
+  },
+  {
+    "objectID": "whois/wintree.html",
+    "href": "whois/wintree.html",
+    "title": "겨울나무",
+    "section": "",
+    "text": "설립자 대표 연구원. 현장소장, 사업팀장, 국내외 건축사업, PM/CM 담당.\ne-mail: wintree.p@gmail.com\n\nEducation:\n\nPh.D. in Urban Planning and Engineering\n\n\n\nExperience:\n\n36 years experience in construction company\n\n\n\nLiteratures:\n\n대한건축학회, 건축기술지침 I, II"
   }
 ]

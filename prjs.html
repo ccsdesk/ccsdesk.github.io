@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CCSicon - Home</title>
+<title>CCSicon - Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-author','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -111,11 +111,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./prjs.html">
+    <a class="nav-link active" href="./prjs.html" aria-current="page">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Home</h1>
+      <h1 class="title">Projects</h1>
                       </div>
   </div>
     
@@ -157,61 +157,42 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="건설산업기본법">건설산업기본법 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="법령">법령 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="소득">소득 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="지출">지출 <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="사업성검토">사업성검토 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="시장조사">시장조사 <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="건설도시연구" class="level2">
-<h2 class="anchored" data-anchor-id="건설도시연구">건설도시연구</h2>
-<p>건설산업, 도시, 부동산 분야에서 근무 경력이 있는 인원들로 구성되어 있습니다.<br>
-관련 분야의 연구 결과는 뉴스레터, 보고서, 책자 등으로 발간하고 있습니다.<br>
-</p>
-<p>회사 전략 컨설팅, 시장 조사, 기획 연구 의뢰나 참여 문의는 Contacts를 참고 하세요.</p>
+<section id="프로젝트" class="level2">
+<h2 class="anchored" data-anchor-id="프로젝트">프로젝트</h2>
+<p>건설도시연구의 완료한 프로젝트 중에서 선별된 프로젝트 요약을 보실 수 있습니다.</p>
+<p>공개된 자료는 바로 다운로드할 수 있는 링크가 제공됩니다.</p>
 <p><br>
-</p>
-<style>
-  .two-columns {
-    column-count: 2; /* 단 개수 지정: 안쪽의 나뉘어질 부분은 p 태그로 길게 구분 없이 */
-    column-gap: 30px; /* 단 사이 여백: 입력 하거나 div 태그로 위치 지정할 수 있음 */
-  }
-</style>
-<div class="two-columns">
-<div>
-<a href="https://forms.gle/6nDNvJtxMvL4NUuB6">뉴스레터 구독(무료) 신청:</a>
-</div>
-<div>
-<a href="mailto:ccsdeskpic#gmail.com">대표 에디터에게 문의:</a>
-</div>
-</div>
-<p><br>
-<br>
 </p>
 
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
      <select id="listing-listing-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">정렬</option>
        <option value="index" data-direction="asc">기본</option>
+         <option value="listing-title" data-direction="asc">
+          프로젝트명
+        </option>
          <option value="listing-date-sort" data-direction="asc">
-          날짜 - 오름차순
+          종료일 - 오름차순
         </option>
          <option value="listing-date-sort" data-direction="desc">
-          날짜 - 내림차순
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          제목
+          종료일 - 내림차순
         </option>
          <option value="listing-author" data-direction="asc">
-          출처
+          담당
         </option>
      </select>
   </div>
@@ -220,47 +201,33 @@ ul.task-list li input[type="checkbox"] {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">날짜</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">제목</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">출처</a>
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="소득,지출" data-listing-date-sort="1766502000000" data-listing-file-modified-sort="1775032471977" data-listing-reading-time-sort="0.24" data-listing-title-sort="2025년 3분기 가계동향 조사" data-listing-filename-sort="가계동향조사_2025년3분기.qmd">
-<td class="listing-date">
-2025-12-24
-</td>
-<td class="listing-title">
-<a href="./home/가계동향조사_2025년3분기.html" class="title">2025년 3분기 가계동향 조사</a>
-</td>
-<td class="listing-author">
-통계청
-</td>
-</tr>
-<tr data-index="1" data-categories="법령,건설산업기본법" data-listing-date-sort="1760194800000" data-listing-file-modified-sort="1775032456843" data-listing-reading-time-sort="0.47" data-listing-title-sort="건설산업 기본법 개정" data-listing-filename-sort="건설산업기본법일부개정_2025년10월12일.qmd">
-<td class="listing-date">
-2025-10-12
-</td>
-<td class="listing-title">
-<a href="./home/건설산업기본법일부개정_2025년10월12일.html" class="title">건설산업 기본법 개정</a>
-</td>
-<td class="listing-author">
-법제처
-</td>
-</tr>
-</tbody>
-
-</table>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="사업성검토,시장조사" data-listing-date-sort="1584370800000" data-listing-file-modified-sort="1775048657348" data-listing-reading-time-sort="0.115">
+<a href="./prjs/개포프로젝트.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="prjs/project.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+개포 프로젝트
+</h5>
+<div class="card-text listing-description">
+인접 구 시장조사 및 프로첵트 사업성 분석.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+editor, desk
+</div>
+<div class="listing-date">
+2020-03-17
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 일치 없음
 </div>
