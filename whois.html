@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
+    <a class="nav-link active" href="./index.html" aria-current="page">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Data</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./whois.html" aria-current="page">
+    <a class="nav-link" href="./whois.html">
  <span class="menu-text">Contacts</span></a>
   </li>  
 </ul>
@@ -138,12 +138,20 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Contacts</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Contacts</h1>
+      <h1 class="title d-none d-lg-block">Contacts</h1>
                       </div>
   </div>
     
@@ -158,6 +166,37 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Home</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prjs.html" class="sidebar-item-text sidebar-link">Projects</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pubs.html" class="sidebar-item-text sidebar-link">Publications</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data.html" class="sidebar-item-text sidebar-link">Data Download</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./whois.html" class="sidebar-item-text sidebar-link active">Contacts</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="대표">대표 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="연구원">연구원 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="편집자">편집자 <span class="quarto-category-count">(2)</span></div></div></div>
@@ -201,15 +240,15 @@ Tip
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
      <select id="listing-listing-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">정렬</option>
-       <option value="index" data-direction="asc">기본</option>
+       <option value="index" data-direction="asc">디폴트</option>
          <option value="listing-title" data-direction="asc">
-          이름
+          성명
         </option>
          <option value="listing-date-sort" data-direction="asc">
-          합류일 - 오름차순
+          참여일 - (오름차순)
         </option>
          <option value="listing-date-sort" data-direction="desc">
-          합류일 - 내림차순
+          참여일 - (내림차순)
         </option>
          <option value="listing-author" data-direction="asc">
           별칭
@@ -222,7 +261,7 @@ Tip
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="편집자" data-listing-date-sort="1772290800000" data-listing-file-modified-sort="1775309100944" data-listing-reading-time-sort="0.015">
+<div class="g-col-1" data-index="0" data-categories="편집자" data-listing-date-sort="1772290800000" data-listing-file-modified-sort="1775327087407" data-listing-reading-time-sort="0.015">
 <a href="./whois/editor.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -250,7 +289,7 @@ editor
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="대표,연구원" data-listing-date-sort="1677596400000" data-listing-file-modified-sort="1775309100946" data-listing-reading-time-sort="0.165">
+<div class="g-col-1" data-index="1" data-categories="대표,연구원" data-listing-date-sort="1677596400000" data-listing-file-modified-sort="1775327118441" data-listing-reading-time-sort="0.165">
 <a href="./whois/wintree.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -278,12 +317,12 @@ wintree
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="편집자" data-listing-date-sort="1724511600000" data-listing-file-modified-sort="1775309100945" data-listing-reading-time-sort="0.035">
+<div class="g-col-1" data-index="2" data-categories="편집자" data-listing-date-sort="1724511600000" data-listing-file-modified-sort="1775327182636" data-listing-reading-time-sort="0.02">
 <a href="./whois/nopicture.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="whois/profile.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
+<div class="card-img-bg" style="height: 150px;">
+&nbsp;
+</div>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 사진 없음
@@ -292,7 +331,7 @@ wintree
 연구원
 </div>
 <div class="card-text listing-description">
-이 자리는 여러분을 위한 자리 입니다.
+데이터 과학자. 통계학자.
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">

@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,12 +138,20 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Home</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Home</h1>
+      <h1 class="title d-none d-lg-block">Home</h1>
                       </div>
   </div>
     
@@ -158,6 +166,37 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">Home</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prjs.html" class="sidebar-item-text sidebar-link">Projects</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pubs.html" class="sidebar-item-text sidebar-link">Publications</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data.html" class="sidebar-item-text sidebar-link">Data Download</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./whois.html" class="sidebar-item-text sidebar-link">Contacts</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="건설산업기본법">건설산업기본법 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="법령">법령 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="소득">소득 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="지출">지출 <span class="quarto-category-count">(1)</span></div></div></div>
@@ -219,18 +258,18 @@ Important
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
      <select id="listing-listing-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">정렬</option>
-       <option value="index" data-direction="asc">기본</option>
+       <option value="index" data-direction="asc">디폴트</option>
          <option value="listing-date-sort" data-direction="asc">
-          날짜 - 오름차순
+          날짜 - (오름차순)
         </option>
          <option value="listing-date-sort" data-direction="desc">
-          날짜 - 내림차순
+          날짜 - (내림차순)
         </option>
          <option value="listing-title-sort" data-direction="asc">
           제목
         </option>
          <option value="listing-author" data-direction="asc">
-          출처/작성자
+          저자(출처)
         </option>
      </select>
   </div>
@@ -250,12 +289,12 @@ Important
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">제목</a>
 </th>
 <th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">출처/작성자</a>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">저자(출처)</a>
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="소득,지출" data-listing-date-sort="1766502000000" data-listing-file-modified-sort="1775309100940" data-listing-reading-time-sort="0.27" data-listing-title-sort="2025년 3분기 가계동향 조사" data-listing-filename-sort="가계동향조사_2025년3분기.qmd">
+<tr data-index="0" data-categories="소득,지출" data-listing-date-sort="1766502000000" data-listing-file-modified-sort="1775325617864" data-listing-reading-time-sort="0.27" data-listing-title-sort="2025년 3분기 가계동향 조사" data-listing-filename-sort="가계동향조사_2025년3분기.qmd">
 <td class="listing-date">
 2025-12-24
 </td>
@@ -266,7 +305,7 @@ Important
 통계청
 </td>
 </tr>
-<tr data-index="1" data-categories="법령,건설산업기본법" data-listing-date-sort="1760194800000" data-listing-file-modified-sort="1775309100940" data-listing-reading-time-sort="0.47" data-listing-title-sort="건설산업 기본법 개정" data-listing-filename-sort="건설산업기본법일부개정_2025년10월12일.qmd">
+<tr data-index="1" data-categories="법령,건설산업기본법" data-listing-date-sort="1760194800000" data-listing-file-modified-sort="1775327004002" data-listing-reading-time-sort="0.47" data-listing-title-sort="건설산업 기본법 개정" data-listing-filename-sort="건설산업기본법일부개정_2025년10월12일.qmd">
 <td class="listing-date">
 2025-10-12
 </td>
