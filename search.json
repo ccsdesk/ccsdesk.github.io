@@ -14,8 +14,8 @@
     "text": "리스트"
   },
   {
-    "objectID": "data/AdminDist.html",
-    "href": "data/AdminDist.html",
+    "objectID": "data/행정구역.html",
+    "href": "data/행정구역.html",
     "title": "대한민국 행정구역",
     "section": "",
     "text": "Administrative District\n\n\nCity County District\n\n대한민국 시군구 코드 및 이름(국문, 영문)\n출처: KOSIS\n다운로드: 시군구.csv"
@@ -39,7 +39,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Important\n\n\n\n서버에서 테스트 중입니다. 테스트 종료 후 데이터 마이그레이션 및 정식 오픈 예정입니다.\n\n\n건설산업, 도시, 부동산 분야에서 근무 경력이 있는 인원들로 구성되어 있습니다.\n관련 분야의 연구 결과는 뉴스레터, 보고서, 책자 등으로 발간하고 있습니다.\n\n회사 전략 컨설팅, 시장 조사, 사업성 분석, 기타 기획 연구 의뢰나 참여 문의는 Contacts를 참고 하세요.\n\n\n\n\n\n뉴스레터 (무료)구독 신청:\n\n\n대표 에디터에게 문의:"
+    "text": "Important\n\n\n\n서버에서 테스트 중입니다. 테스트 종료 후 데이터 마이그레이션 및 정식 오픈 예정입니다.\n\n\n건설산업, 도시, 부동산 분야에서 근무 경력이 있는 인원들로 구성되어 있습니다.\n관련 분야의 연구 결과는 뉴스레터, 보고서, 책자 등으로 발간하고 있습니다.\n\n회사 전략 컨설팅, 시장 조사, 사업성 분석, 기타 기획 연구 의뢰나 참여 문의는 Contacts를 참고 하세요.\n\n\n\n\n\n뉴스레터 구독 신청:\n\n\n대표 에디터에게 문의:"
   },
   {
     "objectID": "index.html#블로그",
@@ -107,9 +107,9 @@
   {
     "objectID": "whois/nopicture.html",
     "href": "whois/nopicture.html",
-    "title": "사진 없음",
+    "title": "철인",
     "section": "",
-    "text": "데이터 과학자. 통계학자.\ne-mail: ccsdeskpic@gmail.com"
+    "text": "해외사업 전문가.\ne-mail: ccsdeskpic@gmail.com"
   },
   {
     "objectID": "whois/wintree.html",
