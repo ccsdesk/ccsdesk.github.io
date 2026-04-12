@@ -1,15 +1,15 @@
 [
   {
-    "listing": "/data.html",
-    "items": [
-      "/data/행정구역.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/home/가계동향조사_2025년3분기.html",
       "/home/건설산업기본법일부개정_2025년10월12일.html"
+    ]
+  },
+  {
+    "listing": "/data.html",
+    "items": [
+      "/data/행정구역.html"
     ]
   },
   {
