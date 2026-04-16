@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-87789dfd1a51b57e76f2f03c6f70bd5e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-daa8fa81d25beabfc7405797cb8d7aea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-author','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -203,7 +203,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTgyJUFDJUVDJTk3JTg1JUVDJTg0JUIxJUVBJUIyJTgwJUVEJTg2JUEw">사업성검토 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJThCJTlDJUVDJTlFJUE1JUVDJUExJUIwJUVDJTgyJUFD">시장조사 <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -231,15 +231,15 @@ window.Quarto = {
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
     <select id="listing-listing-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">정렬</option>
-      <option value="index" data-direction="asc">디폴트</option>
+      <option value="index" data-direction="asc">기본</option>
       <option value="listing-title" data-direction="asc">
         프로젝트
       </option>
       <option value="listing-date-sort" data-direction="asc">
-        종료일 - (오름차순)
+        종료일 - 오름차순
       </option>
       <option value="listing-date-sort" data-direction="desc">
-        종료일 - (내림차순)
+        종료일 - 내림차순
       </option>
       <option value="listing-author" data-direction="asc">
         담당
@@ -252,30 +252,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="JUVDJTgyJUFDJUVDJTk3JTg1JUVDJTg0JUIxJUVBJUIyJTgwJUVEJTg2JUEwJTJDJUVDJThCJTlDJUVDJTlFJUE1JUVDJUExJUIwJUVDJTgyJUFD" data-listing-date-sort="1584370800000" data-listing-file-modified-sort="1775989599977" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<a href="./prjs/개포프로젝트.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./prjs/project.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-개포 프로젝트
-</h5>
-<div class="card-text listing-description delink">
-인접 구 시장조사 및 프로첵트 사업성 분석.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-editor , desk
-</div>
-<div class="listing-date">
-2020-03-17
-</div>
-</div>
-</div>
-</div></a>
-</div>
+
 </div>
 <div class="listing-no-matching d-none">일치 없음</div>
 </div></main> <!-- /main -->
