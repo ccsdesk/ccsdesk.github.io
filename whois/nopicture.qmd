@@ -1,0 +1,26 @@
+---
+# 성명으로 사용
+title: "철인"
+# 직위로 사용
+subtitle: "연구원"
+#description: 본문 첫번째 문단
+# 합류일로 사용
+date: "2024-08-25"
+# 별칭으로 사용
+author: "king of lab"
+categories: [연구원, 해외사업]
+image: nopicture.png
+about:
+    template: solana
+    image-shape: round
+# 문서는 h4 ~ h6 3단계 사용하여 작성하고,
+# 페이지 목차를 보이게 하려면 아래 두 옵션 설정
+#toc-depth: 6  # h1 ~ h6 중 리스트할 한계
+#toc-expand: 4 # h1 ~ h6 중 기본으로 펼쳐질 한계
+draft: true
+---
+
+해외사업 전문가.
+
+
+

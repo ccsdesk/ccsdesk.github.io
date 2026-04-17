@@ -1,0 +1,5 @@
+format: 
+  html: 
+    title-block-author-single: "별칭"
+    title-block-author-plural: "별칭"
+    title-block-published: "참여일"

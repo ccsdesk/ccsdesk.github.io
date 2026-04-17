@@ -1,0 +1,5 @@
+format: 
+  html: 
+    title-block-author-single: "담당"
+    title-block-author-plural: "담당"
+    title-block-published: "종료일"

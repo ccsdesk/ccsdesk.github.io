@@ -1,0 +1,48 @@
+---
+title: "건설공사계약금액 2025년"
+author: "wintree(통계누리)"
+date: "2026-04-15"
+date-modified: "2026-04-15"
+categories: [건설공사, 계약금액]
+toc: true
+draft: false
+---
+
+2025년 현장 소재지별 건설공사 계약금액 (분기별)
+
+#### 건설공사계약
+
+```{r}
+#| echo: false
+#| output: false
+library(tidyverse)
+```
+
+[데이터 파일: 현장소재지별_건설공사계약금액.csv](/FILES/%ED%98%84%EC%9E%A5%EC%86%8C%EC%9E%AC%EC%A7%80%EB%B3%84_%EA%B1%B4%EC%84%A4%EA%B3%B5%EC%82%AC%EA%B3%84%EC%95%BD%EA%B8%88%EC%95%A1.csv){download=""}
+
+```{r}
+#| echo: false
+#| output: false
+contract <- read_csv("FILES/현장소재지별_건설공사계약금액.csv") |>
+    mutate(구분 = as.factor(구분), 시도별 = as.factor(시도별))
+contract$구분 <- fct_relevel(contract$구분, "전국", "수도권", "지방")
+contract$시도별 <- fct_relevel(contract$시도별, "전국", "서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주")
+met <- contract |> group_by(`분기`, `구분`) |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
+ccd <- contract |> group_by(`분기`, `시도별`) |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
+```
+\
+
+##### 2025년 현장 소재지별 건설공사 계약금액(억원)
+
+```{r}
+#| echo: false
+#| tab.cap: 지역별 분기별 건설공사 계약금액(억원)
+knitr::kable(met |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`))), format.args = list(big.mark = ","))
+```
+
+```{r}
+#| echo: false
+#| tab.cap: 시도별 분기별 건설공사 계약금액(억원)
+knitr::kable(ccd |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`))), format.args = list(big.mark = ","))
+```
+

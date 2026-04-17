@@ -1,0 +1,49 @@
+project:
+  title: "CCS"
+  type: website
+  render: 
+    - "*.qmd"
+    - "!/LOCAL/"
+  execute-dir: project
+  resources: 
+    - "/FILES/"
+    - "*.png"
+
+execute: 
+  freeze: auto
+
+website:
+  site-url: "https://ccsdesk.github.io/"
+  draft-mode: visible
+  navbar:
+    logo: logo.png
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Projects"
+        href: prjs.qmd
+      - text: "Publications"
+        href: pubs.qmd
+      - text: "Data"
+        href: data.qmd
+      - text: "Contacts"
+        href: whois.qmd
+#  sidebar: 
+#    contents: 
+#      - index.qmd
+#      - prjs.qmd
+#      - pubs.qmd
+#      - data.qmd
+#      - whois.qmd
+
+
+format:
+  html:
+    theme: pulse
+    toc: true
+#    css: styles.css
+#    listing: 관련 지정은 하면 안됨
+    date-format: iso
+    title-block-banner: true
+#    embed-resources: true
+

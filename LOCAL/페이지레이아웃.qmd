@@ -1,0 +1,39 @@
+## 개요
+
+In Quarto, the page-layout option in the YAML header dictates how the content of a document or website page is arranged within the browser viewport or on the page. It is used to switch between a focused, narrow layout for reading and a broader layout for applications or dashboard-style content. 
+
+## Common page-layout Options
+
+You can set this option at the project level (_quarto.yml) or the individual document level. 
+
+- article (Default): The content is centered, with a maximum width optimized for readability (typically around 900px). This is ideal for reports, blog posts, or academic papers.
+
+- full: The content fills the entire browser width, utilizing the full space available. This is ideal for dashboards, homepages, or interactive applications.
+
+- custom: Allows you to define your own width using CSS or SCSS variables. 
+
+## How to Use It
+
+You can specify the layout in your YAML header for a single document (.qmd): 
+
+```yaml
+title: "My Dashboard"
+format:
+  html:
+    page-layout: full   ## 이 줄만 써도 됨
+```
+
+Alternatively, to set it for an entire website in _quarto.yml: 
+
+```yaml
+website:
+  page-layout: article  ## 기본 옵션
+```
+
+## Related Layout Features
+
+- Article Layout: Quarto uses a grid-based approach that allows elements to span the full width, or sit within the margin, regardless of the overall page-layout.
+
+- Grid Customization: You can adjust the exact width of the sidebar, body, and margin columns in HTML documents using YAML variables like sidebar-width, body-width, and margin-width.
+
+- Title Blocks: title-block-style can be adjusted (default, plain, none) to manage how the title metadata is displayed at the top of the page. 

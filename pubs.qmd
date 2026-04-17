@@ -1,0 +1,27 @@
+---
+title: "Publications"
+listing:
+  contents:
+    - "/pubs/*.qmd"
+  fields: [image, title, subtitle, description, author, date]
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  field-display-names:
+    title: "출판물" 
+    author: "발행인"
+    date: "발행일"
+toc: false
+---
+
+
+## 출판물 
+
+건설도시연구에서 출간한 출판물의 요약본 및 구입처 안내입니다.
+
+공개된 자료는 바로 다운로드할 수 있는 링크가 제공됩니다.
+
+\
+
+## 리스트

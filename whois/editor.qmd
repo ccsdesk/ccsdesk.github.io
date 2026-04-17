@@ -1,0 +1,27 @@
+---
+# 성명으로 사용
+title: "건도연"
+# 직위로 사용
+subtitle: "편집자"
+#description: 본문 첫번째 문단
+# 합류일로 사용
+date: "2026-03-01"
+# 별칭으로 사용
+author: "editor"
+categories: [편집자]
+image: editor.png
+about:
+    template: solana
+    image-shape: round
+# 문서는 h4 ~ h6 3단계 사용하여 작성하고,
+# 페이지 목차를 보이게 하려면 아래 두 옵션 설정
+#toc-depth: 6  # h1 ~ h6 중 리스트할 한계
+#toc-expand: 4 # h1 ~ h6 중 기본으로 펼쳐질 한계
+draft: true
+---
+
+
+콘텐츠 개발자/창작자.
+
+[e-mail: ccsdeskpic@gmail.com](mailto:ccsdeskpic@gmail.com)
+

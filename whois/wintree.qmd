@@ -1,0 +1,39 @@
+---
+# 성명으로 사용
+title: "겨울나무"
+# 직위로 사용
+subtitle: "대표"
+#description: 본문 첫번째 문단
+# 합류일로 사용
+date: "2023-03-01"
+# 별칭으로 사용
+author: "wintree"
+categories: [대표, 연구원]
+image: wintree.png
+about:
+    template: solana
+    image-shape: round
+# 문서는 h4 ~ h6 3단계 사용하여 작성하고,
+# 페이지 목차를 보이게 하려면 아래 두 옵션 설정
+#toc-depth: 6  # h1 ~ h6 중 리스트할 한계
+#toc-expand: 4 # h1 ~ h6 중 기본으로 펼쳐질 한계
+draft: true
+---
+
+
+설립자, 대표 연구원, 공학박사. 건설사 경력 36년. (현장소장, 사업팀장, 국내외 건축사업, PM, CM 담당임원)
+
+[e-mail: wintree.p@gmail.com](mailto:wintree.p@gmail.com)
+
+#### Education:
+
+- Ph.D. in Urban Planning and Engineering
+
+#### Experience:
+
+- 36 years experience in construction company
+
+#### Literatures:
+
+- Architectural Institute of Korea, Architectural Engineering Guide I, II
+
