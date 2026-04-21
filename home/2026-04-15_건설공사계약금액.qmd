@@ -27,8 +27,10 @@ contract <- read_csv("FILES/현장소재지별_건설공사계약금액.csv") |>
     mutate(구분 = as.factor(구분), 시도별 = as.factor(시도별))
 contract$구분 <- fct_relevel(contract$구분, "전국", "수도권", "지방")
 contract$시도별 <- fct_relevel(contract$시도별, "전국", "서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주")
-met <- contract |> group_by(`분기`, `구분`) |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
-ccd <- contract |> group_by(`분기`, `시도별`) |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
+met <- contract |> filter(substr(분기, 1, 4) == "2025") |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`), .by = c(분기, 구분)) |>
+    pivot_wider(names_from = 분기, values_from = `계약금액(억원)`) |> rowwise() |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`)))
+ccd <- contract |> filter(substr(분기, 1, 4) == "2025") |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`), .by = c(분기, 시도별)) |>
+    pivot_wider(names_from = 분기, values_from = `계약금액(억원)`) |> rowwise() |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`)))
 ```
 \
 
@@ -37,12 +39,12 @@ ccd <- contract |> group_by(`분기`, `시도별`) |> summarize(`계약금액(�
 ```{r}
 #| echo: false
 #| tab.cap: 지역별 분기별 건설공사 계약금액(억원)
-knitr::kable(met |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`))), format.args = list(big.mark = ","))
+knitr::kable(met, format.args = list(big.mark = ","))
 ```
 
 ```{r}
 #| echo: false
 #| tab.cap: 시도별 분기별 건설공사 계약금액(억원)
-knitr::kable(ccd |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`))), format.args = list(big.mark = ","))
+knitr::kable(ccd, format.args = list(big.mark = ","))
 ```
 
