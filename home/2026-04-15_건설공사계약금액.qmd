@@ -4,19 +4,23 @@ author: "wintree(통계누리)"
 date: "2026-04-15"
 date-modified: "2026-04-15"
 categories: [건설공사, 계약금액]
-toc: true
+toc: false
 draft: false
 ---
 
-2025년 현장 소재지별 건설공사 계약금액 (분기별)
+2025년 현장 소재지별 건설공사 계약금액
 
-#### 건설공사계약
+(분기별, 2014년 1분기 ~ 2025년 4분기)
+
+### 건설공사계약
 
 ```{r}
 #| echo: false
 #| output: false
 library(tidyverse)
 ```
+
+---
 
 [데이터 파일: 현장소재지별_건설공사계약금액.csv](/FILES/%ED%98%84%EC%9E%A5%EC%86%8C%EC%9E%AC%EC%A7%80%EB%B3%84_%EA%B1%B4%EC%84%A4%EA%B3%B5%EC%82%AC%EA%B3%84%EC%95%BD%EA%B8%88%EC%95%A1.csv){download=""}
 
@@ -32,6 +36,7 @@ met <- contract |> filter(substr(분기, 1, 4) == "2025") |> summarize(`계약�
 ccd <- contract |> filter(substr(분기, 1, 4) == "2025") |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`), .by = c(분기, 시도별)) |>
     pivot_wider(names_from = 분기, values_from = `계약금액(억원)`) |> rowwise() |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`)))
 ```
+
 \
 
 ##### 2025년 현장 소재지별 건설공사 계약금액(억원)

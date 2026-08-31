@@ -20,12 +20,12 @@ website:
     right:
       - text: "Home"
         href: index.qmd
-      - text: "Projects"
-        href: prjs.qmd
-      - text: "Publications"
-        href: pubs.qmd
-      - text: "Data"
-        href: data.qmd
+#      - text: "Projects"
+#        href: prjs.qmd
+#      - text: "Publications"
+#        href: pubs.qmd
+      - text: "Data(x)"
+#        href: data.qmd
       - text: "Contacts"
         href: whois.qmd
 #  sidebar: 

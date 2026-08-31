@@ -8,34 +8,18 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  field-display-names: 
-    author: "저자(출처)"
 toc: false
 ---
 
 
 ## 건설도시연구(Construction City Study)
 
-건설산업, 도시, 부동산 분야에서 근무 경력이 있는 인원들로 구성되어 있습니다.\
-관련 분야의 연구 결과는 뉴스레터, 보고서, 책자 등으로 발간하고 있습니다.\
+건설산업, 도시, 부동산 분야 전문가 그룹입니다.\
+조사, 연구 결과는 보고서, 책자 등으로 발간하고 있습니다.\
 
-회사 전략 컨설팅, 시장 조사, 사업성 분석, 기타 기획 연구 의뢰나 참여 문의는 Contacts를 참고 하세요.
+전략 컨설팅, 시장 조사, 사업성 분석, 기타 기획 연구 의뢰나\
+참여 문의는 Contacts를 참고 하세요.
 
-\
-
-<style>
-  .two-columns {
-    column-count: 2; /* 단 개수 지정: 안쪽의 나뉘어질 부분은 p 태그로 길게 구분 없이 */
-    column-gap: 30px; /* 단 사이 여백: 입력 하거나 div 태그로 위치 지정할 수 있음 */
-  }
-</style>
-
-<div class="two-columns">
-  <div>[뉴스레터 구독 신청:](https://forms.gle/6nDNvJtxMvL4NUuB6)</div>
-  <div>[대표 에디터에게 문의:](mailto:ccsdeskpic@gmail.com)</div>
-</div>
-
-\
 \
 
 ## 블로그

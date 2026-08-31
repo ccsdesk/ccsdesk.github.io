@@ -1,0 +1,15 @@
+\
+
+<style>
+  .two-columns {
+    column-count: 2; /* 단 개수 지정: 안쪽의 나뉘어질 부분은 p 태그로 길게 구분 없이 */
+    column-gap: 30px; /* 단 사이 여백: 입력 하거나 div 태그로 위치 지정할 수 있음 */
+  }
+</style>
+
+<div class="two-columns">
+  <div>[뉴스레터 구독 신청:](https://forms.gle/6nDNvJtxMvL4NUuB6)</div>
+  <div>[대표 에디터에게 문의:](mailto:ccsdeskpic@gmail.com)</div>
+</div>
+
+\
